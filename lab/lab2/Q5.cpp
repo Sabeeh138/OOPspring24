@@ -1,6 +1,6 @@
 /*
-name: Muhammad Abbas
-ID: 23k-0068
+name: Muhammad Sabeeh
+ID: 23k-0002
 purpose: a product management system with a user interface
 */
 
