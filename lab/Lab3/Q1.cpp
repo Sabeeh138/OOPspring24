@@ -2,7 +2,6 @@
 Muhammad Sabeeh
 2/15/2023
 */
-
 #include <iostream>
 #include <string>
 
@@ -46,11 +45,19 @@ public:
 };
 
 int main() {
-    WeekDays week(1); // Initialize with Monday
+    int inputDay;
+    cout << "Enter the number representing the day (0 for Sunday, 1 for Monday, etc.): ";
+    cin >> inputDay;
+
+    WeekDays week(inputDay);
     cout << "Current day: " << week.getCurrentDay() << endl;
     cout << "Next day: " << week.getNextDay() << endl;
     cout << "Previous day: " << week.getPreviousDay() << endl;
-    cout << "20 days from today: " << week.getNthDayFromToday(20) << endl;
+
+    int n;
+    cout << "Enter the number of days to calculate from today: ";
+    cin >> n;
+    cout << n << " days from today: " << week.getNthDayFromToday(n) << endl;
 
     return 0;
 }
