@@ -1,6 +1,6 @@
 /*
-    Name:Yesaullah Sheikh
-    Roll no:23k-0019    
+    Name:Muhammad Sabeeh
+    Roll no:23k-0002    
 */
 #include <iostream>
 using namespace std;
@@ -59,10 +59,10 @@ int Appointments::AppointmentsCount = 0;
 float Appointments::TotalEarnings = 0;
 
 int main(){
-    Appointments a1("Yesaullah", "Monday", 500);
-    Appointments a2("Safiullah", "Wednesday", 1000);
-    Appointments a3("Asadullah", "Friday", 200.5);
-    Appointments a4("Amarha", "Tuesday", 300);
+    Appointments a1("Sabeeh", "Monday", 500);
+    Appointments a2("arnold", "Wednesday", 1000);
+    Appointments a3("Mandem", "Friday", 200.5);
+    Appointments a4("Homie", "Tuesday", 300);
 
     cout<<"The average cost of all the appoinments is: "<<a1.AverageCostPerAppointment()<<endl;
 }
