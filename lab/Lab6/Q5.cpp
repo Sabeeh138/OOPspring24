@@ -1,5 +1,5 @@
 /*
-    Name: Yesaulah Sheikh
+    Name: Muhammad Sabeeh
     Roll no: 23k-0002
 */
 #include <iostream>
@@ -88,7 +88,7 @@ int main(){
     Courses c4("AP400", "Applied Physics", 3);
     Courses c5("OOPLAB200", "OOP Lab", 1);
 
-    Student s1("23K-0019", "Yesaullah Sheikh");
+    Student s1("23K-0002", "Muhammad Sabeeh");
 
     s1.enroll(c1);
     s1.enroll(c2);
