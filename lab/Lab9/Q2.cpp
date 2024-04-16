@@ -103,21 +103,18 @@ public:
 
 int main() {
     cout <<"Name: Muhammad Sabeeh   ID:23K-0002"<<endl;
-    Circle circle(5);
-    Rectangle rectangle(4, 6);
-    Square square(5);
-    Triangle triangle(3, 4, 5);
-    EquilateralTriangle equilateralTriangle(6);
+    Shape* shapes[5];
+    shapes[0] = new Circle(5);
+    shapes[1] = new Rectangle(4, 6);
+    shapes[2] = new Square(5);
+    shapes[3] = new Triangle(3, 4, 5);
+    shapes[4] = new EquilateralTriangle(6);
 
-    circle.displayProperties();
-    cout << endl;
-    rectangle.displayProperties();
-    cout << endl;
-    square.displayProperties();
-    cout << endl;
-    triangle.displayProperties();
-    cout << endl;
-    equilateralTriangle.displayProperties();
+    for (int i = 0; i < 5; ++i) {
+        shapes[i]->displayProperties();
+        cout << endl;
+        delete shapes[i]; // Deallocate memory
+    }
 
     return 0;
 }
